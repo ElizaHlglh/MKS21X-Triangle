@@ -16,6 +16,7 @@ public class Triangle{
   }
 
   public double getPerimeter(){
+    v1.distance()
     side1 = Math.sqrt(Math.pow(x1-x2, 2) + Math.pow(y1-y2, 2));
     side2 = Math.sqrt(Math.pow(x2-x3, 2) + Math.pow(y2-y3, 2));
     side3 = Math.sqrt(Math.pow(x1-x3, 2) + Math.pow(y1-y3, 2));
@@ -23,6 +24,7 @@ public class Triangle{
   }
 
   public Point getVertex(int index){
+    Point[] list = new Point[3];
     if (index == 0) {
       return v1;
     }
