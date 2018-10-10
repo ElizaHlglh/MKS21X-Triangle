@@ -16,7 +16,10 @@ public class Triangle{
   }
 
   public double getPerimeter(){
-
+    side1 = Math.sqrt(Math.pow(x1-x2, 2) + Math.pow(y1-y2, 2));
+    side2 = Math.sqrt(Math.pow(x2-x3, 2) + Math.pow(y2-y3, 2));
+    side3 = Math.sqrt(Math.pow(x1-x3, 2) + Math.pow(y1-y3, 2));
+    return side1 + side2 + side3;
   }
 
   public Point getVertex(int index){
